@@ -9,7 +9,7 @@ scriptencoding utf-8
 if !1 | finish | endif
 
 set nocompatible
-set number
+set number relativenumber
 syntax enable
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
@@ -139,16 +139,26 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+" let g:neosolarized_termtrans=1
+" runtime ./colors/NeoSolarized.vim
+" colorscheme NeoSolarized
+
+" Available values: 'hard', 'medium'(default), 'soft'
+  let g:everforest_background = 'hard'
+" For better performance
+  let g:everforest_better_performance = 1
+  let g:everforest_transparent_background = 1
+  let g:everforest_enable_italic = 1
+  colorscheme everforest
 endif
 
 "}}}
 
 " Extras "{{{
 " ---------------------------------------------------------------------
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 set exrc
-"}}}
+"}}} 
 
 " vim: set foldmethod=marker foldlevel=0:

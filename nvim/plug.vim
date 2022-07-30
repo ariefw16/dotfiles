@@ -6,7 +6,6 @@ call plug#begin()
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'cohama/lexima.vim'
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
@@ -23,6 +22,13 @@ if has("nvim")
   Plug 'pantharshit00/vim-prisma'
   Plug 'hoob3rt/lualine.nvim'
   Plug 'L3MON4D3/LuaSnip'
+  Plug 'windwp/nvim-autopairs'
+  Plug 'windwp/nvim-ts-autotag'
+  Plug 'sainnhe/everforest'
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+  Plug 'tpope/vim-commentary'
+  Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 endif
 
 call plug#end()

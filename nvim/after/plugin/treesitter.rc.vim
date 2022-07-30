@@ -20,6 +20,8 @@ require 'nvim-treesitter.configs'.setup {
     "yaml",
     "html",
     "scss",
+    "prisma",
+    "query",
     "typescript"
     } 
   }
