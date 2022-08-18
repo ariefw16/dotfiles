@@ -29,6 +29,7 @@ if has("nvim")
   Plug 'tpope/vim-commentary'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 
 call plug#end()
