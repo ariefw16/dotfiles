@@ -30,6 +30,7 @@ if has("nvim")
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
 endif
 
 call plug#end()
