@@ -3,6 +3,10 @@
 " endif
 
 lua << EOF
+--require("nvim-treesitter.install").command_extra_args = {
+--    curl = { "--proxy", "<proxy url>" },
+--}
+
 require 'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
