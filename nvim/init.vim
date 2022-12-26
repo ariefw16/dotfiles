@@ -160,6 +160,10 @@ endif
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 set exrc
+
+"phpactor autcomplete
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
 "}}} 
 
 " vim: set foldmethod=marker foldlevel=0:

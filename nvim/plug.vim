@@ -31,6 +31,10 @@ if has("nvim")
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'lewis6991/gitsigns.nvim'
+  Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+  Plug 'ncm2/ncm2'
+  Plug 'roxma/nvim-yarp'
+  Plug 'phpactor/ncm2-phpactor'
 endif
 
 call plug#end()

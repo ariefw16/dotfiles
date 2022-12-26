@@ -19,3 +19,6 @@ map sl <C-w>l
 
 " nvim-tree
 map <leader>e :NvimTreeToggle<CR>
+
+" c i W shortcut
+map <leader>c ciW
